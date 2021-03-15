@@ -26,7 +26,9 @@ if [[ $? != "0" ]]; then
 fi
 
 echo 'Creating config...'
-echo 'RemoteIPHeader CF-Connecting-IP' > $1
+echo '# This file was created by cfrip.sh' > $1
+echo '# Manual edits might get lost...' >> $1
+echo 'RemoteIPHeader CF-Connecting-IP' >> $1
 
 for i in `cat cloudflareips`;
 do
