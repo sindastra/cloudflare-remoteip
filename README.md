@@ -1,5 +1,7 @@
-# cloudflare-remoteip (cfrip-apache2.sh)
-Fetches Cloudflare IP (v4 and v6) ranges and creates a config for mod_remoteip (Apache HTTP Server)
+# cloudflare-remoteip (cfrip-*.sh)
+Fetches Cloudflare IP (v4 and v6) ranges and creates a config for your web server
+
+### mod_remoteip (Apache HTTP Server)
 
 Example setup on Debian/Ubuntu:
 
@@ -12,3 +14,12 @@ Subsequent usage (updating):
 
     sudo ./cfrip-apache2.sh /etc/apache2/conf-available/cloudflare-remoteip.conf
     sudo systemctl reload apache2
+
+### Nginx
+
+Example setup on Debian/Ubuntu:
+
+    sudo ./cfrip-nginx.sh /etc/nginx/conf.d/cloudflare-realip.conf
+    sudo systemctl reload nginx
+
+It's the same when updating.
