@@ -5,7 +5,8 @@
 # All rights reserved.
 
 echo 'cfrip.sh  BSD 3-Clause License'
-echo 'Copyright (c) 2021, Sindastra  All rights reserved.'
+echo 'Copyright (c) 2021, Sindastra'
+echo 'All rights reserved.'
 echo
 
 if [[ $1 == "" ]]; then
