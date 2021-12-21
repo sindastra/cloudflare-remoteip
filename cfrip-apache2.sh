@@ -1,10 +1,10 @@
 #!/bin/bash
-# cfrip.sh
+# cfrip-apache2.sh
 # BSD 3-Clause License
 # Copyright (c) 2021, Sindastra
 # All rights reserved.
 
-echo 'cfrip.sh  BSD 3-Clause License'
+echo 'cfrip-apache2.sh  BSD 3-Clause License'
 echo 'Copyright (c) 2021, Sindastra'
 echo 'All rights reserved.'
 echo
@@ -28,7 +28,7 @@ if [[ $? != "0" ]]; then
 fi
 
 echo 'Creating config...'
-echo '# This file was created by cfrip.sh' > $1
+echo '# This file was created by cfrip-apache2.sh' > $1
 echo '# Manual edits might get lost...' >> $1
 echo 'RemoteIPHeader CF-Connecting-IP' >> $1
 
