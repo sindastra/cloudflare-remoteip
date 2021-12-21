@@ -16,6 +16,7 @@ fi
 
 echo 'Downloading IP ranges...'
 curl -sSL 'https://www.cloudflare.com/ips-v4' > cloudflareips && \
+echo '' >> cloudflareips
 curl -sSL 'https://www.cloudflare.com/ips-v6' >> cloudflareips
 
 if [[ $? != "0" ]]; then
